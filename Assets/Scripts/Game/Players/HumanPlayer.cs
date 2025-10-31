@@ -25,7 +25,7 @@ namespace Chess.Players
 		Board board;
 		public HumanPlayer(Board board)
 		{
-			boardUI = GameObject.FindObjectOfType<BoardUI>();
+			boardUI = Object.FindFirstObjectByType<BoardUI>();
 			cam = Camera.main;
 			this.board = board;
 		}
@@ -104,15 +104,7 @@ namespace Chess.Players
 				else
 				{
 					int targetIndex = BoardHelper.IndexFromCoord(targetSquare.fileIndex, targetSquare.rankIndex);
-					if (Piece.IsColour(board.Square[targetIndex], board.MoveColour) && board.Square[targetIndex] != 0)
-					{
-						CancelPieceSelection();
-						HandlePieceSelection(mousePos);
-					}
-					else
-					{
-						TryMakeMove(selectedPieceSquare, targetSquare);
-					}
+					TryMakeMove(selectedPieceSquare, targetSquare);
 				}
 			}
 			else
@@ -135,6 +127,7 @@ namespace Chess.Players
 
 		void TryMakeMove(Coord startSquare, Coord targetSquare)
 		{
+			Debug.Log("Trying to make move");
 			int startIndex = BoardHelper.IndexFromCoord(startSquare);
 			int targetIndex = BoardHelper.IndexFromCoord(targetSquare);
 			bool moveIsLegal = false;
@@ -189,10 +182,12 @@ namespace Chess.Players
 					// If square contains a piece, select that piece for dragging
 					if (Piece.IsColour(board.Square[index], board.MoveColour))
 					{
-						boardUI.HighlightLegalMoves(board, selectedPieceSquare);
-						boardUI.HighlightSquare(selectedPieceSquare);
-						currentState = InputState.DraggingPiece;
+						
 					}
+					
+					boardUI.HighlightLegalMoves(board, selectedPieceSquare);
+					boardUI.HighlightSquare(selectedPieceSquare);
+					currentState = InputState.DraggingPiece;
 				}
 			}
 		}

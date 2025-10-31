@@ -62,7 +62,7 @@ namespace Chess.Game
 			clockManager.gameObject.SetActive(useClocks);
 			Application.targetFrameRate = 120;
 
-			boardUI = FindObjectOfType<BoardUI>();
+			boardUI = FindFirstObjectByType<BoardUI>();
 			board = new Board();
 			searchBoard = new Board();
 			aiSettings.diagnostics = new Searcher.SearchDiagnostics();
@@ -139,20 +139,20 @@ namespace Chess.Game
 		void OnMoveChosen(Move move)
 		{
 			PlayMoveSound(move);
-
+			
 			bool animateMove = playerToMove is AIPlayer;
 			board.MakeMove(move);
 			searchBoard.MakeMove(move);
-
+			
 			currentFen = FenUtility.CurrentFen(board);
 			onMoveMade?.Invoke(move);
 			boardUI.UpdatePosition(board, move, animateMove);
-
-			if (useClocks)
-			{
-				clockManager.ToggleClock();
-			}
-
+			
+			// if (useClocks)
+			// {
+			// 	clockManager.ToggleClock();
+			// }
+			
 			NotifyPlayerToMove();
 		}
 
@@ -187,7 +187,9 @@ namespace Chess.Game
 			boardUI.ResetSquareColours();
 
 			CreatePlayer(ref whitePlayer, whitePlayerType);
-			CreatePlayer(ref blackPlayer, blackPlayerType);
+			//CreatePlayer(ref blackPlayer, blackPlayerType);
+
+			playerToMove = whitePlayer;
 
 			if (useClocks)
 			{
@@ -199,7 +201,7 @@ namespace Chess.Game
 
 			gameResult = GameResult.Result.Playing;
 
-			NotifyPlayerToMove();
+			//NotifyPlayerToMove();
 
 		}
 
@@ -229,7 +231,7 @@ namespace Chess.Game
 
 			if (gameResult == GameResult.Result.Playing)
 			{
-				playerToMove = (board.IsWhiteToMove) ? whitePlayer : blackPlayer;
+				playerToMove = whitePlayer;
 
 				playerToMove.NotifyTurnToMove();
 
