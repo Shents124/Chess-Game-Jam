@@ -1,13 +1,17 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.9",
     "com.unity.ide.rider": "3.0.38",
     "com.unity.ide.visualstudio": "2.0.23",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.inputsystem": "1.14.2",
+    "com.unity.localization": "1.5.8",
+    "com.unity.mathematics": "1.3.3",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.ugui": "2.0.0",
+    "com.zbase.csv-reader": "https://github.com/Zitga-Tech/ZBase.Csv-Reader.git?path=/Packages/ZBase.CsvReader",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",
     "com.unity.modules.audio": "1.0.0",

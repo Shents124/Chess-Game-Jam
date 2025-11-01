@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4254227496896578544}
   - component: {fileID: 550753911438103704}
-  - component: {fileID: 6514279868658135161}
   m_Layer: 0
-  m_Name: Rook W
+  m_Name: Piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,18 +88,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6514279868658135161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7338354830998757822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda2f6d07cf84248a52faf7e42128662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorType: 0
-  x: 0
-  y: 0

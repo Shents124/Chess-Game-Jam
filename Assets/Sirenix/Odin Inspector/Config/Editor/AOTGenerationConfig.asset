@@ -1,0 +1,1243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1726182683, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
+  m_Name: AOTGenerationConfig
+  m_EditorClassIdentifier: 
+  automateBeforeBuilds: 0
+  deleteDllAfterBuilds: 1
+  AutomateForAllAOTPlatforms: 1
+  automateForPlatforms: 0900000014000000
+  lastScan: 638266166185764063
+  supportSerializedTypes:
+  - TypeName: EventAngryGiant.AngryGiantBattleConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantBattleLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantBattleLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantBattleRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantBattleRewardLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantBattleRewardLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantRankCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantRankPlayerCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantRankPlayerCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantRankPositionCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantRankPositionCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.AngryGiantShopRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassIAPCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassIAPDetailCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassIAPDetailCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassQuestCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassRewardConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BattlePass.BattlePassRewardCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Diary.BonusReward, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Boolean, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Booster.BoosterBuffConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Booster.BoosterCommonConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Effect.CalculationType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignGoldDropCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignGoldDropLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignGoldDropLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignSpawnConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignSpawnCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignSpawnLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Campaign.CampaignSpawnLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Diary.DiaryQuestConfigs, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Gameplay.Dungeon.DungeonRingDifficultMode,
+      Assembly-CSharp],[Gameplay.Dungeon.DungeonRingModeConfigCsv, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Character.EnemyType, Assembly-CSharp],[Enemy.EnemyStatsBaseData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Character.EnemyType, Assembly-CSharp],[Enemy.EnemyStatsEnhanceData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[EventAngryGiant.EventAngryGiantRankType,
+      Assembly-CSharp],[EventAngryGiant.AngryGiantBattleConfigCsv, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[EventAngryGiant.EventAngryGiantRankType,
+      Assembly-CSharp],[EventAngryGiant.AngryGiantBattleRewardCsv, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[EventAngryGiant.EventAngryGiantRankType,
+      Assembly-CSharp],[EventAngryGiant.AngryGiantRankCsv, Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[UnlockFeature.FeatureType,
+      Assembly-CSharp],[UnlockFeature.UnlockFeatureCsv, Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[EventAngryGiant.AngryGiantShopRewardCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[BattlePass.BattlePassIAPCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[BattlePass.BattlePassQuestCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[BattlePass.BattlePassRewardConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[BattlePass.BattlePassRewardCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Booster.BoosterBuffConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRingSpawnDataCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GachaChest.GachaChestData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Gear.GearEffectCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Gear.GearRarityConfigData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Player.HeroBaseStatsCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Player.HeroDetailConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Player.HeroSkillConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Player.HeroUnlockConditionCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[SevenDayLogin.LoginReward,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Mastery.MasteryBuffDetailCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Mastery.MasteryRequireDetail,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[MiniGame.MiniGameChest,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[MiniGame.MiniGameWebReward,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Pet.PetCommonConfig,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Pet.PetOwnedEffectCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Pet.PetStatsDataCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Relic.RelicCommonInfoCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Relic.RelicEnhanceCostCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Relic.RelicOwnedEffectCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Research.ResearchRequireDetail,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Shop.ShopIAPCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Skill.SkillCommonConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Skill.SkillEffectConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Skill.SkillOwnedEffectCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[UnityEngine.Sprite,
+      UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Trait.TraitBuffCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Skill.UISkillElement,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[MiniGame.MiniGameRoomType,
+      Assembly-CSharp],[MiniGame.MiniGameRoomConfig, Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[MiniGame.MiniGameRoomType,
+      Assembly-CSharp],[UnityEngine.Sprite[], UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Utils.RarityEnum, Assembly-CSharp],[Ring.RingSkillRarityConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Ring.RingEffectRarity, Assembly-CSharp],[Gameplay.Dungeon.RingDungeonRarityConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Character.StatType, Assembly-CSharp],[Player.HeroStatAddPerLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Character.StatType, Assembly-CSharp],[Ring.RingEquippedConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[IAP.IAPProductCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Trait.TraitSynergy, Assembly-CSharp],[Trait.TraitSynergyBuffCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Tutorial.TutorialFeatureType,
+      Assembly-CSharp],[System.Collections.Generic.SortedDictionary`2[[System.Int32,
+      mscorlib],[Tutorial.TutorialStepCsv, Assembly-CSharp]], System]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[Tutorial.TutorialFeatureType,
+      Assembly-CSharp],[Tutorial.TutorialUnlockConditionCsv, Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGemRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGemRewardLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGemRewardLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGemSpawnCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGemSpawnLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGemSpawnLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGoldRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGoldRewardLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGoldRewardLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGoldSpawnCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGoldSpawnLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonGoldSpawnLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicEnemyConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicEnemyConfigCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicRewardLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicRewardLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicSpawnCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicSpawnLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRelicSpawnLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingDifficultMode, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingModeConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingModeDetailCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingModeDetailCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingSpawnDataCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingSpawnDataLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonRingSpawnDataLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonTraitRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonTraitRewardLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonTraitRewardLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonTraitSpawnDataCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonTraitSpawnLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.DungeonTraitSpawnLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Effect.EffectTarget, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Effect.EffectType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Enemy.EnemyStat, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Enemy.EnemyStat[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Enemy.EnemyStatsBaseData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Enemy.EnemyStatsEnhanceData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Character.EnemyType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Character.EnemyType[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Gameplay.Dungeon.DungeonRingDifficultMode,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Character.EnemyType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[EventAngryGiant.EventAngryGiantRankType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[UnlockFeature.FeatureType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[MiniGame.MiniGameRoomType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Utils.RarityEnum,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Ring.RingEffectRarity,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Character.StatType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Trait.TraitSynergy,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[Tutorial.TutorialFeatureType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.EventAngryGiantPromotion, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EventAngryGiant.EventAngryGiantRankType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnlockFeature.FeatureType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Single, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: GachaChest.GachaChestData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.GachaGeneralConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.GachaGeneralConfig[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.GachaLevelConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.GachaPriceConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.GachaPriceConfig[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.GachaRateConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gear.GearEffectCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gear.GearEffectStatCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gear.GearEffectStatCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gear.GearLevelConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gear.GearRarityConfigData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroAdConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroBaseStatsCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroDetailConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroLevelConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroOwnedEffectLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroOwnedEffectLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroRarityType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroSkillConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroSkillEffectDataCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroSkillEffectDataCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroStatAddPerLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroStatEnhanceCostCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroStatEnhanceCostLevelCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroStatEnhanceCostLevelCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroUnlockConditionCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Player.HeroUnlockConditionType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: IAP.IAPProductCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: IAP.IAPProductType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: IdleReward.IdleRewardConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: IdleReward.IdleRewardCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Gameplay.Dungeon.DungeonRingDifficultMode,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Character.EnemyType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[EventAngryGiant.EventAngryGiantRankType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[UnlockFeature.FeatureType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[System.Int32, mscorlib]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[MiniGame.MiniGameRoomType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Utils.RarityEnum, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Ring.RingEffectRarity,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Character.StatType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[System.String, mscorlib]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Trait.TraitSynergy,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[Tutorial.TutorialFeatureType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ItemLinking.ItemLinkingConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ItemLinking.ItemLinkingEffectStatCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ItemLinking.ItemLinkingType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[EventAngryGiant.AngryGiantBattleLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[EventAngryGiant.AngryGiantBattleRewardLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Campaign.CampaignGoldDropLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Campaign.CampaignSpawnConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Campaign.CampaignSpawnLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Diary.DiaryQuestConfigs,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGemRewardLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGemSpawnLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGoldRewardLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGoldSpawnLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRelicRewardLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRelicSpawnLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRingSpawnDataLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonTraitRewardLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonTraitSpawnLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gacha.GachaLevelConfig,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gacha.GachaRateConfig,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Gear.GearLevelConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Player.HeroLevelConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Player.HeroStatEnhanceCostLevelCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[IdleReward.IdleRewardCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[ItemLinking.ItemLinkingConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[MiniGame.MiniGameRoomUnlockRateCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Pet.PetLevelConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Quest.QuestDataConfig,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Relic.RelicUnlockCostCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Ring.RingCostDetailCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Skill.SkillLevelConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Tutorial.TutorialStepCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.KeyValuePair`2[[Character.StatType, Assembly-CSharp],[Player.HeroStatEnhanceCostCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[Diary.BonusReward, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[UI.Buttons.MenuButtonUI, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[Gameplay.Dungeon.RingOptionConfigCsv,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[Roulette.SpinDataConfig, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[Trait.TraitRarityRateCsv, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: SevenDayLogin.LoginReward, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int64, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Mastery.MasteryBuffDetailCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Mastery.MasteryBuffIdRequire, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Mastery.MasteryBuffIdRequire[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Mastery.MasteryRequireDetail, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UI.Buttons.MenuButtonUI, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameChest, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameRoomConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameRoomRate, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameRoomRate[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameRoomType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameRoomUnlockRateCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MiniGame.MiniGameWebReward, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Money.MoneyType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetCommonConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetLevelConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetOwnedEffectCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetOwnedEffectStatCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetOwnedEffectStatCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetStatCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetStatCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetStatsDataCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Pet.PetType[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: QuestBase.QuestData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Quest.QuestDataConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Quest.QuestDataConfig[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: QuestBase.QuestResetType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: QuestBase.QuestTarget, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: QuestBase.QuestType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Utils.RarityEnum, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.RateRarityConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gacha.RateRarityConfig[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicCommonInfoCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicEnhanceCostCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicOwnedEffectCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicOwnedEffectStatCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicOwnedEffectStatCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Relic.RelicUnlockCostCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Research.ResearchBuffIdRequire, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Research.ResearchBuffIdRequire[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Research.ResearchRequireDetail, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.ResourceItemCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.ResourceItemCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.ResourceItemCsv2, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.ResourceItemCsv2[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.ResourceType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.ResourceType[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.RewardDataConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.RewardDataConfig[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingCostCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingCostDetailCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingCostDetailCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.RingDungeonEnhanceType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.RingDungeonRarityConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingEffectRarity, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingEquippedConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Gameplay.Dungeon.RingOptionConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingSkillEffectCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingSkillEffectCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Ring.RingSkillRarityConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Shop.ShopIAPCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Shop.ShopResetType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillCommonConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillEffectConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillEffectDataCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillEffectDataCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillLevelConfigCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillOwnedEffectCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillOwnedEffectStatCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillOwnedEffectStatCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.SkillTarget, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[EventAngryGiant.AngryGiantBattleLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[EventAngryGiant.AngryGiantBattleRewardLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Campaign.CampaignGoldDropLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Campaign.CampaignSpawnConfigCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Campaign.CampaignSpawnLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Diary.DiaryQuestConfigs,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGemRewardLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGemSpawnLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGoldRewardLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonGoldSpawnLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRelicRewardLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRelicSpawnLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonRingSpawnDataLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonTraitRewardLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gameplay.Dungeon.DungeonTraitSpawnLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gacha.GachaLevelConfig,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gacha.GachaRateConfig,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Gear.GearLevelConfigCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Player.HeroLevelConfigCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Player.HeroStatEnhanceCostLevelCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[IdleReward.IdleRewardCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[ItemLinking.ItemLinkingConfigCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[MiniGame.MiniGameRoomUnlockRateCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Pet.PetLevelConfigCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Quest.QuestDataConfig,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Relic.RelicUnlockCostCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Ring.RingCostDetailCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Skill.SkillLevelConfigCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[System.Int32, mscorlib],[Tutorial.TutorialStepCsv,
+      Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.SortedDictionary`2[[Character.StatType,
+      Assembly-CSharp],[Player.HeroStatEnhanceCostCsv, Assembly-CSharp]], System
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Roulette.SpinDataConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Sprite, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Sprite[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Character.StatData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Character.StatData[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Character.StatType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.String, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitBuffCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitBuffDetailCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitBuffDetailCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitRarity, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitRarityRateCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitSynergy, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitSynergyBuffCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitSynergyBuffDetailCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitSynergyBuffDetailCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitSynergyBuffRequireCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Trait.TraitSynergyBuffRequireCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialData[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialFeatureType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialStepCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialUnlockConditionCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Tutorial.TutorialUnlockType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Skill.UISkillElement, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.Unit, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.Unit[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Resource.UnitType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnlockFeature.UnlockConditionCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnlockFeature.UnlockConditionCsv[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnlockFeature.UnlockConditionType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnlockFeature.UnlockFeatureCsv, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
