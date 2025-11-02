@@ -4,8 +4,12 @@ using System.Collections.Generic;
 using New;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
 using UnityEngine.UI;
 using Vfx;
+
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
+using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class Board2D : MonoBehaviour
 {
@@ -42,8 +46,21 @@ public class Board2D : MonoBehaviour
         reloadBtn.onClick.AddListener(LoadLevel);
     }
 
+    private void OnEnable()
+    {
+        EnhancedTouchSupport.Enable();
+        TouchSimulation.Enable();
+    }
+
+    private void OnDisable()
+    {
+        EnhancedTouchSupport.Disable();
+        TouchSimulation.Disable();
+    }
+
     void Start()
     {
+        
         GenerateBoard();
         LoadLevel();
     }
@@ -125,10 +142,14 @@ public class Board2D : MonoBehaviour
         if (_canInput == false)
             return;
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        var touchCount = Touch.activeTouches.Count;
+        if (touchCount == 0)
+            return;
+        
+        var touch = Touch.activeTouches[0];
+        if (touch.valid && touch.phase == TouchPhase.Began)
         {
-            Mouse mouse = Mouse.current;
-            Vector2 worldPos = cam.ScreenToWorldPoint(mouse.position.ReadValue());
+            Vector2 worldPos = cam.ScreenToWorldPoint(touch.screenPosition);
             var index = GetCellIndex(worldPos);
 
             if (IsInside(index.x, index.y))
