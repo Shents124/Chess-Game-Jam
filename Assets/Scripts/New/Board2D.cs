@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using New;
+using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using Vfx;
@@ -12,6 +13,9 @@ public class Board2D : MonoBehaviour
     public GameObject tilePrefab;
     public ChessFactory chessFactory;
 
+    public Color blackGrid;
+
+    [SerializeField] private TextMeshProUGUI levelTxt;
     [SerializeField] private Button reloadBtn;
 
     [SerializeField] private LevelConfigData levelConfigData;
@@ -56,13 +60,14 @@ public class Board2D : MonoBehaviour
                 tileScript.SetPosition(r, c);
                 tiles[r, c] = tileScript;
 
-                tile.GetComponent<SpriteRenderer>().color = (r + c) % 2 == 0 ? Color.white : Color.blue;
+                tile.GetComponent<SpriteRenderer>().color = (r + c) % 2 == 1 ? Color.white : blackGrid;
             }
         }
     }
 
     private void LoadLevel()
     {
+        levelTxt.text = "Level " + _currentLevel;
         ClearBoard();
         ClearHighlights();
         var configs = levelConfigData.GetPieceConfigs(_currentLevel);
@@ -176,6 +181,13 @@ public class Board2D : MonoBehaviour
             board[newX, newY] = piece;
             var newPosition = GetCellCenterForSize(newX, newY);
             piece.SetPosition(newX, newY, newPosition);
+            
+            if (piece.colorType == ColorType.Green)
+            {
+                var newPiceType = targetPiece.pieceType;
+                var newSprite = chessFactory.GetSprite(newPiceType);
+                piece.TurnInto(newPiceType, newSprite);
+            }
         }
 
         if (targetPiece.pieceType == PieceType.Bomb)

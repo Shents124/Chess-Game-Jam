@@ -42,39 +42,28 @@ namespace New
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        public void Initialize(int x, int y, ColorType colorType, PieceType pieceType, Sprite sprite, Vector2 position)
+        public void Initialize(int x, int y, ColorType colorType, PieceType pieceType, Color color, Sprite sprite, Vector2 position)
         {
             this.x = x;
             this.y = y;
             this.colorType = colorType;
             spriteRenderer.sprite = sprite;
             this.pieceType = pieceType;
-            SetColor();
+            SetColor(color);
             transform.position = position;
         }
 
-        protected virtual void SetColor()
+        protected virtual void SetColor(Color color)
         {
-            switch (colorType)
-            {
-                case ColorType.White:
-                    spriteRenderer.color = Color.white;
-                    break;
-                case ColorType.Blue:
-                    spriteRenderer.color = Color.blue;
-                    break;
-                case ColorType.Yellow:
-                    spriteRenderer.color = Color.yellow;
-                    break;
-                case ColorType.Red:
-                    spriteRenderer.color = Color.red;
-                    break;
-                case ColorType.Green:
-                    spriteRenderer.color = Color.green;
-                    break;
-            }
+            spriteRenderer.color = color;
         }
-        
+
+
+        public void TurnInto(PieceType newPieceType, Sprite newSprite)
+        {
+            pieceType = newPieceType;
+            spriteRenderer.sprite = newSprite;
+        }
         
         public void SetPosition(int newX, int newY, Vector2 newPosition)
         {
@@ -87,11 +76,6 @@ namespace New
         public virtual List<MoveData> GetAvailableMoves(Piece2D[,] board)
         {
             return GridHelper.GetAvailableMoves(colorType, pieceType, board, x, y);
-        }
-
-        protected bool IsInside(int x, int y)
-        {
-            return x >= 0 && x < 8 && y >= 0 && y < 8;
         }
     }
 }

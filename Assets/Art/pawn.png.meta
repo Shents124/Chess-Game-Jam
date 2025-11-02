@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d913b7a6ea104274a83baef6e168ac3d
+guid: 2c415d839e2190543a7dcf5b06a1616c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4331266930707179102
-    second: bomb_circle_0
+      213: 792778199420499268
+    second: pawn_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb_circle_0
+      name: pawn_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 5
-        width: 180
-        height: 244
+        x: 106
+        y: 18
+        width: 300
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a95dcfacaf34e3c0800000000000000
-      internalID: -4331266930707179102
+      spriteID: 445f1227293800b00800000000000000
+      internalID: 792778199420499268
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bomb_circle_0: -4331266930707179102
+      pawn_0: 792778199420499268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

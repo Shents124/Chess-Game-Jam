@@ -9,6 +9,7 @@ namespace New
         public GameObject bombPrefab;
         
         public List<Sprite> sprites;
+        public List<Color> colors;
         
         public Piece2D GetPiece(PieceType pieceType, ColorType colorType, int x, int y, Vector2 position)
         {
@@ -34,10 +35,16 @@ namespace New
             
             var index = (int)pieceType;
             var sprite = sprites[index];
+            var color = colors[(int)colorType];
             if (piece)
-                piece.Initialize(x, y, colorType, pieceType, sprite, position);
+                piece.Initialize(x, y, colorType, pieceType, color, sprite, position);
 
             return piece;
+        }
+
+        public Sprite GetSprite(PieceType spriteType)
+        {
+            return sprites[(int)spriteType];
         }
     }
 }
