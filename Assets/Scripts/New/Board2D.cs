@@ -1,10 +1,9 @@
-using System;
 using UnityEngine;
 using System.Collections.Generic;
 using New;
 using TMPro;
-using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.UI;
 using Vfx;
 
@@ -16,7 +15,8 @@ public class Board2D : MonoBehaviour
     public Camera cam;
     public GameObject tilePrefab;
     public ChessFactory chessFactory;
-
+    public TutPopup tutPopup;
+    public InputSystemUIInputModule inputModule;
     public Color blackGrid;
 
     [SerializeField] private TextMeshProUGUI levelTxt;
@@ -40,10 +40,11 @@ public class Board2D : MonoBehaviour
     [SerializeField]
     private int _currentLevel = 1;
     private bool _canInput = false;
-
+    private LevelConfig _levelConfig;
+    
     private void Awake()
     {
-        reloadBtn.onClick.AddListener(LoadLevel);
+        reloadBtn.onClick.AddListener(() => LoadLevel(false));
         Application.targetFrameRate = 120;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
@@ -69,6 +70,7 @@ public class Board2D : MonoBehaviour
 
     void GenerateBoard()
     {
+        tiles = new Tile2D[8, 8];
         for (int r = 0; r < size; r++) // từ hàng dưới lên
         {
             for (int c = 0; c < size; c++) // từ trái sang phải
@@ -84,13 +86,14 @@ public class Board2D : MonoBehaviour
         }
     }
 
-    private void LoadLevel()
+    private void LoadLevel(bool showTut = true)
     {
         levelTxt.text = "Level " + _currentLevel;
         ClearBoard();
         ClearHighlights();
-        var configs = levelConfigData.GetPieceConfigs(_currentLevel);
-        foreach (var config in configs)
+        _levelConfig = levelConfigData.GetPieceConfigs(_currentLevel);
+        
+        foreach (var config in _levelConfig.pieces)
         {
             var x = config.x;
             var y = config.y;
@@ -102,9 +105,49 @@ public class Board2D : MonoBehaviour
             board[x, y] = piece;
         }
 
+        ShowStickSpot();
+        
+        if (showTut)
+            CheckShowTut();
+        
         _canInput = true;
     }
 
+    private void CheckShowTut()
+    {
+        var tutId = _levelConfig.tutId;
+        if (tutId == 0)
+            return;
+        
+        tutPopup.ShowTut(tutId - 1);
+    }
+    
+    private void ShowStickSpot()
+    {
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++)
+            {
+                var tile = tiles[i, j];
+                if (tile == null)
+                    continue;
+                
+                tile.ShowStickySpot(IsStickySpot(i, j));
+            }
+        }
+    }
+
+    private bool IsStickySpot(int x, int y)
+    {
+        var vector = new Vector2Int(x, y);
+        if (_levelConfig.stickySpots.Contains(vector))
+        {
+            return true;
+        }
+        
+        return false;
+    }
+    
     private void ClearBoard()
     {
         for (int i = 0; i < size; i++)
@@ -143,13 +186,17 @@ public class Board2D : MonoBehaviour
     {
         if (_canInput == false)
             return;
-
+        
         var touchCount = Touch.activeTouches.Count;
         if (touchCount == 0)
             return;
         
         var touch = Touch.activeTouches[0];
-        if (touch.valid && touch.phase == TouchPhase.Began)
+        
+        if (inputModule.IsPointerOverGameObject(touch.touchId))
+            return;
+        
+        if (touch is { valid: true, phase: TouchPhase.Began })
         {
             Vector2 worldPos = cam.ScreenToWorldPoint(touch.screenPosition);
             var index = GetCellIndex(worldPos);
@@ -167,6 +214,9 @@ public class Board2D : MonoBehaviour
 
         if (selectedPiece == null)
         {
+            if (IsStickySpot(x, y))
+                return;
+            
             if (clickedPiece != null)
             {
                 selectedPiece = clickedPiece;
@@ -272,7 +322,7 @@ public class Board2D : MonoBehaviour
     private void ShowVfx()
     {
         vfxCompleted.transform.position = Vector3.zero;
-        vfxCompleted.PlayEffect(LoadLevel);
+        vfxCompleted.PlayEffect(() => LoadLevel());
     }
 
     void ShowMoves(List<MoveData> moves)

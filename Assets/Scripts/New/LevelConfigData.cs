@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using UnityEngine;
 
 namespace New
 {
     public class LevelConfigData : SerializedScriptableObject
     {
         [NonSerialized, OdinSerialize]
-        private Dictionary<int, List<PieceConfig>>  _pieceConfigs = new();
+        private Dictionary<int, LevelConfig>  _pieceConfigs = new();
         
         private LevelConfigCsv[] _needConvertData;
 
@@ -19,17 +20,11 @@ namespace New
             
             foreach (var item in _needConvertData)
             {
-                var list = new List<PieceConfig>();
-                foreach (var pieceConfigCsv in item.pieces)
-                {
-                    list.Add(pieceConfigCsv.ToPieceConfig());
-                }
-                
-                _pieceConfigs.Add(item.level, list);
+                _pieceConfigs.Add(item.level, item.ToLevelConfig());
             }
         }
 
-        public List<PieceConfig> GetPieceConfigs(int level)
+        public LevelConfig GetPieceConfigs(int level)
         {
             return _pieceConfigs.TryGetValue(level, out var config) ? config : _pieceConfigs.LastOrDefault().Value;
         }
@@ -39,7 +34,50 @@ namespace New
     public struct LevelConfigCsv
     {
         public int level;
+        public int tutId;
+        public StickySpotCsv[] stickySpots;
         public PieceConfigCsv[]  pieces;
+
+        public LevelConfig ToLevelConfig()
+        {
+            var listPieceConfigs = new List<PieceConfig>();
+            foreach (var item in pieces)
+            {
+                listPieceConfigs.Add(item.ToPieceConfig());
+            }
+            
+            var listStickySpots = new List<Vector2Int>();
+            foreach (var item in stickySpots)
+            {
+                listStickySpots.Add(item.GetIndex());
+            }
+
+            return new LevelConfig()
+            {
+                tutId = tutId,
+                pieces = listPieceConfigs,
+                stickySpots = listStickySpots
+            };
+        }
+    }
+
+    public struct LevelConfig
+    {
+        public int tutId;
+        public List<PieceConfig> pieces;
+        public List<Vector2Int> stickySpots;
+    }
+
+    [Serializable]
+    public struct StickySpotCsv
+    {
+        public int numberSticky;
+        public Letter letterSticky;
+
+        public Vector2Int GetIndex()
+        {
+            return new Vector2Int(numberSticky - 1, (int)letterSticky);
+        }
     }
     
     [Serializable]
@@ -61,7 +99,7 @@ namespace New
             };
         }
     }
-
+    
     public struct PieceConfig
     {
         public int x;

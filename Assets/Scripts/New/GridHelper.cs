@@ -91,7 +91,8 @@ namespace New
                     }
                     else
                     {
-                        if (board[nx, ny].colorType != colorType)
+                        var currentColor = board[nx, ny].colorType;
+                        if (currentColor == ColorType.Yellow  || currentColor != colorType)
                             moves.Add(new MoveData(nx, ny, true));
                         break;
                     }
@@ -121,7 +122,7 @@ namespace New
                     }
                     else
                     {
-                        if (target.colorType != colorType)
+                        if (colorType == ColorType.Yellow || target.colorType != colorType)
                         {
                             moves.Add(new MoveData(forwardX, ny, true));
                         }
@@ -151,7 +152,7 @@ namespace New
                 }
                 else
                 {
-                    if (target.colorType != colorType)
+                    if (colorType == ColorType.Yellow || target.colorType != colorType)
                     {
                         moves.Add(new MoveData(nx, ny, true));
                     }
@@ -214,7 +215,7 @@ namespace New
                         }
                         else
                         {
-                            if (target.colorType != colorType)
+                            if (colorType == ColorType.Yellow || target.colorType != colorType)
                             {
                                 moves.Add(new MoveData(nx, ny, true));
                             }
@@ -246,7 +247,7 @@ namespace New
                     }
                     else
                     {
-                        if (target.colorType != colorType)
+                        if (colorType == ColorType.Yellow || target.colorType != colorType)
                             moves.Add(new MoveData(nx, ny, true)); // có thể ăn
 
                         break; // gặp quân nào cũng phải dừng
