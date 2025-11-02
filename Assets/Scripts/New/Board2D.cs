@@ -44,6 +44,8 @@ public class Board2D : MonoBehaviour
     private void Awake()
     {
         reloadBtn.onClick.AddListener(LoadLevel);
+        Application.targetFrameRate = 120;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 
     private void OnEnable()
