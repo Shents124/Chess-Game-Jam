@@ -170,10 +170,10 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 2c415d839e2190543a7dcf5b06a1616c, type: 3}
   - {fileID: 21300000, guid: cfbba5b83db13164c88ce827f775080a, type: 3}
-  - {fileID: 21300000, guid: 0a799a9979c165a44b7215e8f751822e, type: 3}
+  - {fileID: 21300000, guid: 0b5dda62f8f236d47adc3569edcacd78, type: 3}
   - {fileID: 21300000, guid: f0f86176a01a377499da68b781b2f2eb, type: 3}
   - {fileID: 21300000, guid: 0fed359b25242094286d381da9b48fac, type: 3}
-  - {fileID: 21300000, guid: 0b5dda62f8f236d47adc3569edcacd78, type: 3}
+  - {fileID: 21300000, guid: 0a799a9979c165a44b7215e8f751822e, type: 3}
   - {fileID: 21300000, guid: d913b7a6ea104274a83baef6e168ac3d, type: 3}
   colors:
   - {r: 1, g: 1, b: 1, a: 1}
