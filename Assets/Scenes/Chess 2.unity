@@ -440,7 +440,7 @@ MonoBehaviour:
   m_text: Level 11
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1088,6 +1088,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 66c12758432b58d4cb2b4bc370f06df4, type: 3}
   - {fileID: 21300000, guid: c268734a394489044a09bcb1e4d4f990, type: 3}
   - {fileID: 21300000, guid: c0412ffbc17c5584b8a6d07b4ea49ff1, type: 3}
+  - {fileID: 1056123671417173605, guid: 04f5dffde8d1ca646826d7398ee9688d, type: 3}
 --- !u!222 &1234920217
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1487,7 +1488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1891522987
 RectTransform:
   m_ObjectHideFlags: 0

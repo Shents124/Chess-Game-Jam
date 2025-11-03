@@ -1,5 +1,5 @@
 ﻿level,number,letter,piece_type,color_type,tut_id,number_sticky,letter_sticky
-1,6,f,Pawn,Blue,,,
+1,6,f,Pawn,Blue,8,,
 ,3,c,Bishop,White,,,
 2,3,c,Rook,White,1,,
 ,3,f,Pawn,Blue,,,
@@ -31,7 +31,7 @@
 ,4,f,King,Blue,,,
 ,5,g,Pawn,Blue,,,
 11,6,c,Bishop,White,,,
-,5,d,King,White,,,
+,5,d,Queen,White,,,
 ,3,d,Pawn,Blue,,,
 ,4,e,Pawn,Blue,,,
 ,3,f,Rook,Blue,,,
@@ -267,4 +267,4 @@
 ,4,g,Knight,White,,,
 ,3,c,Bishop,Blue,,,
 ,2,f,Pawn,White,,,
-,1,e,Queen,White,,,
+,1,e,Queen,White

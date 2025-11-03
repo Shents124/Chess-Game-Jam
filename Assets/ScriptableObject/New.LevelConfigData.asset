@@ -46,7 +46,7 @@ MonoBehaviour:
       Data: New.LevelConfig, Assembly-CSharp
     - Name: tutId
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: pieces
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[New.PieceConfig, Assembly-CSharp]],
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       Data: 3
     - Name: pieceType
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: colorType
       Entry: 3
       Data: 0

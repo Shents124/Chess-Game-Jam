@@ -19,6 +19,8 @@ public class Board2D : MonoBehaviour
     public InputSystemUIInputModule inputModule;
     public Color blackGrid;
 
+    [SerializeField] private TMP_InputField inputField;
+    [SerializeField] private Button setLevelBtn;
     [SerializeField] private TextMeshProUGUI levelTxt;
     [SerializeField] private Button reloadBtn;
 
@@ -45,8 +47,17 @@ public class Board2D : MonoBehaviour
     private void Awake()
     {
         reloadBtn.onClick.AddListener(() => LoadLevel(false));
+        setLevelBtn.onClick.AddListener(OnClickSetLevel);
         Application.targetFrameRate = 120;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+    }
+
+    private void OnClickSetLevel()
+    {
+        if (int.TryParse(inputField.text, out _currentLevel))
+        {
+            LoadLevel();
+        }
     }
 
     private void OnEnable()
