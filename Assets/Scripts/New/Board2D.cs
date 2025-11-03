@@ -231,7 +231,7 @@ public class Board2D : MonoBehaviour
             {
                 var piece = board[x, y];
 
-                if (piece != null && piece.colorType != selectedPiece.colorType)
+                if (piece != null && GridHelper.CanEat(selectedPiece.colorType, piece.colorType))
                     MovePiece(selectedPiece, piece, x, y);
             }
 

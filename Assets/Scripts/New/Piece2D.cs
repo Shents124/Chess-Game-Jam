@@ -57,8 +57,7 @@ namespace New
         {
             spriteRenderer.color = color;
         }
-
-
+        
         public void TurnInto(PieceType newPieceType, Sprite newSprite)
         {
             pieceType = newPieceType;

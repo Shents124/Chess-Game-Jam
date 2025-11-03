@@ -1218,7 +1218,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 0}
+  m_BackGroundColor: {r: 0.51023495, g: 0.5784439, b: 0.735849, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   chessFactory: {fileID: 56561300}
   tutPopup: {fileID: 1234920215}
   inputModule: {fileID: 1153935132}
-  blackGrid: {r: 0.3137255, g: 0.39215687, b: 0.627451, a: 1}
+  blackGrid: {r: 0.38447848, g: 0.43930224, b: 0.6037736, a: 1}
   levelTxt: {fileID: 744326734}
   reloadBtn: {fileID: 1787851427}
   levelConfigData: {fileID: 11400000, guid: 0ed8c555e914b364099bc7b4811853c2, type: 2}
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   cellSize: 1
   spacing: 0
   vfxCompleted: {fileID: 1268609348}
-  _currentLevel: 29
+  _currentLevel: 1
 --- !u!1 &1787851425
 GameObject:
   m_ObjectHideFlags: 0

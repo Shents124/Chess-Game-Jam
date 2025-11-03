@@ -91,9 +91,9 @@ namespace New
                     }
                     else
                     {
-                        var currentColor = board[nx, ny].colorType;
-                        if (currentColor == ColorType.Yellow  || currentColor != colorType)
+                        if (CanEat(colorType, board[nx, ny].colorType))
                             moves.Add(new MoveData(nx, ny, true));
+                       
                         break;
                     }
                 }
@@ -122,10 +122,8 @@ namespace New
                     }
                     else
                     {
-                        if (colorType == ColorType.Yellow || target.colorType != colorType)
-                        {
+                        if (CanEat(colorType, target.colorType))
                             moves.Add(new MoveData(forwardX, ny, true));
-                        }
                     }
                 }
             }
@@ -152,7 +150,7 @@ namespace New
                 }
                 else
                 {
-                    if (colorType == ColorType.Yellow || target.colorType != colorType)
+                    if (CanEat(colorType, target.colorType))
                     {
                         moves.Add(new MoveData(nx, ny, true));
                     }
@@ -215,7 +213,7 @@ namespace New
                         }
                         else
                         {
-                            if (colorType == ColorType.Yellow || target.colorType != colorType)
+                            if (CanEat(colorType, target.colorType))
                             {
                                 moves.Add(new MoveData(nx, ny, true));
                             }
@@ -247,12 +245,27 @@ namespace New
                     }
                     else
                     {
-                        if (colorType == ColorType.Yellow || target.colorType != colorType)
+                        if (CanEat(colorType, target.colorType))
                             moves.Add(new MoveData(nx, ny, true)); // có thể ăn
 
                         break; // gặp quân nào cũng phải dừng
                     }
                 }
+            }
+        }
+        
+        public static bool CanEat(ColorType currentColor, ColorType otherColor)
+        {
+            switch (currentColor)
+            {
+                case ColorType.White:
+                case ColorType.Blue:
+                    return currentColor != otherColor;
+                case ColorType.Yellow:
+                case ColorType.Red:
+                case ColorType.Green:
+                default:
+                    return true;
             }
         }
         

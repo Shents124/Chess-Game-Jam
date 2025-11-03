@@ -36,7 +36,7 @@ namespace New
         public int level;
         public int tutId;
         public StickySpotCsv[] stickySpots;
-        public PieceConfigCsv[]  pieces;
+        public PieceConfigCsv[] pieces;
 
         public LevelConfig ToLevelConfig()
         {
