@@ -9,7 +9,8 @@ namespace New
         Blue,
         Yellow,
         Red,
-        Green
+        Green,
+        None
     }
 
     public struct MoveData

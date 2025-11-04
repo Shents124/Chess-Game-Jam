@@ -7,7 +7,7 @@ namespace New
     {
         protected override void SetColor(Color color)
         {
-            
+            colorType = ColorType.None;
         }
 
         public override List<MoveData> GetAvailableMoves(Piece2D[,] board)

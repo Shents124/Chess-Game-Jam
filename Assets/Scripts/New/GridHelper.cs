@@ -105,7 +105,7 @@ namespace New
         private static List<MoveData> GetPawnMoves(ColorType colorType, Piece2D[,] board, int x, int y)
         {
             List<MoveData> moves = new();
-            int dir = colorType == ColorType.White ? 1 : -1;
+            int dir = colorType == ColorType.Blue ? -1 : 1;
 
             int forwardX = x + dir;
             

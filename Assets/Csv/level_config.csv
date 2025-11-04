@@ -81,7 +81,7 @@
 ,5,f,Pawn,White,,,
 ,4,d,Pawn,Blue,,,
 ,3,d,Rook,Red,,,
-21,7,f,Pawn,Blue,,,
+21,7,g,Pawn,Blue,,,
 ,6,c,Knight,White,,,
 ,5,e,Bomb,White,,,
 ,5,f,Pawn,White,,,
@@ -267,4 +267,4 @@
 ,4,g,Knight,White,,,
 ,3,c,Bishop,Blue,,,
 ,2,f,Pawn,White,,,
-,1,e,Queen,White
+,1,e,Queen,White,,,
