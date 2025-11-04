@@ -260,6 +260,7 @@
 ,2,d,Bishop,White,,,
 ,1,d,Pawn,White,,,
 ,1,g,King,White,,,
+,5,g,Pawn,Blue,,,
 50,7,e,Rook,Blue,,7,h
 ,7,h,Pawn,Blue,,,
 ,6,f,Knight,Blue,,,
